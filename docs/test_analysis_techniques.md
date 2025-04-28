@@ -1,4 +1,4 @@
-# Shrnutí pro poznámky
+# Techniky černé skřínky
 
 ## Lekce 1: Přehled technik testování
 
@@ -159,6 +159,26 @@
 
 ---
 
-Tento přehled shrnuje klíčové body pro dosud probrané techniky černé skříňky. Doufám, že ti to pomůže s poznámkami!
+# Techniky bílé skřínky
 
-Můžeme teď přejít k technikám bílé skříňky a začít **Testováním a pokrytím příkazů**?
+## Lekce 5: Testování a pokrytí příkazů
+
+### Co to je
+
+Základní technika bílé skříňky.
+
+### Cíl
+
+Navrhnout testy tak, aby byl každý spustitelný příkaz v kódu proveden alespoň jednou.
+
+### Pokrytí
+
+Metrika = (Provedené příkazy / Celkový počet příkazů) \* 100 %.
+
+### Výhody
+
+Základní kontrola, odhalí mrtvý kód, snadno měřitelné.
+
+### Nevýhody
+
+Slabé kritérium, netestuje důkladně podmínky a větvení. 100% pokrytí příkazů neznamená, že byly otestovány všechny logické cesty.
