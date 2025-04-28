@@ -132,7 +132,7 @@
 
 ---
 
-## Testování přechodů stavů
+## Lekce 5: Testování přechodů stavů
 
 ### Co to je
 
