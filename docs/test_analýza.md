@@ -1,7 +1,4 @@
-Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a začátku Kapitoly 5, připravený pro zkopírování do tvého Markdown souboru (`.md`). Použil jsem Markdown formátování pro přehlednost.
-
-```markdown
-# Poznámky ISTQB CTFL 4.0 – Kapitola 4 & 5 (Část 1)
+# Poznámky ISTQB CTFL 4.0 – Kapitola 4
 
 ---
 
@@ -12,9 +9,9 @@ Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a
 **Shrnutí pro poznámky:**
 
 - **Kategorie technik:**
-  - **Černá skříňka (Black-Box):** Testuje funkčnost **bez znalosti vnitřní struktury**, na základě specifikací (co má systém dělat). _Analogie: Testování kávovaru – vstup/výstup._
-  - **Bílá skříňka (White-Box):** Testuje na základě **znalosti vnitřní struktury** (kódu, architektury). Cílem je ověřit vnitřní fungování a měřit pokrytí struktury. _Analogie: Kontrola elektroinstalace elektrikářem._
-  - **Založené na zkušenostech (Experience-Based):** Využívá **znalosti a intuici** testerů k nalezení chyb, které jiné techniky nemusí odhalit. _Analogie: Zkušený automechanik diagnostikuje podle zvuku._
+- **Černá skříňka (Black-Box):** Testuje funkčnost **bez znalosti vnitřní struktury**, na základě specifikací (co má systém dělat). _Analogie: Testování kávovaru – vstup/výstup._
+- **Bílá skříňka (White-Box):** Testuje na základě **znalosti vnitřní struktury** (kódu, architektury). Cílem je ověřit vnitřní fungování a měřit pokrytí struktury. _Analogie: Kontrola elektroinstalace elektrikářem._
+- **Založené na zkušenostech (Experience-Based):** Využívá **znalosti a intuici** testerů k nalezení chyb, které jiné techniky nemusí odhalit. _Analogie: Zkušený automechanik diagnostikuje podle zvuku._
 - **Kombinace:** V praxi se techniky často **kombinují** pro dosažení nejlepšího pokrytí.
 
 ---
@@ -25,18 +22,18 @@ Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a
 
 - **Princip:** Rozdělit možné vstupy/výstupy do **skupin (tříd)**, kde se předpokládá **stejné chování** systému. Cílem je **snížit počet testů** výběrem **jednoho reprezentanta** z každé třídy.
 - **Typy tříd:**
-  - **Platné (Valid):** Hodnoty, které má systém akceptovat.
-  - **Neplatné (Invalid):** Hodnoty, které má systém odmítnout/zpracovat jako chybu.
+- **Platné (Valid):** Hodnoty, které má systém akceptovat.
+- **Neplatné (Invalid):** Hodnoty, které má systém odmítnout/zpracovat jako chybu.
 - **Proces:** Identifikuj vstup -> Identifikuj platné/neplatné třídy -> Navrhni testy (1 hodnota/třída).
 - **Testování neplatných tříd:** Každou neplatnou třídu testuj **samostatně** (v jednom testu jen jedna neplatná podmínka), aby se zabránilo maskování chyb.
 - **Pokrytí:** 100% EP = testována alespoň 1 hodnota z každé třídy.
 - **Příklad (Počet kusů 1-100):**
-  - VP1: 1-100 (vyber např. 50)
-  - IP1: < 1 (vyber např. 0)
-  - IP2: > 100 (vyber např. 101)
-  - IP3: Ne-celá čísla (vyber např. 10.5)
-  - IP4: Nečíselné (vyber např. "abc")
-  - Celkem 5 testů pro 100% EP.
+- VP1: 1-100 (vyber např. 50)
+- IP1: < 1 (vyber např. 0)
+- IP2: > 100 (vyber např. 101)
+- IP3: Ne-celá čísla (vyber např. 10.5)
+- IP4: Nečíselné (vyber např. "abc")
+- Celkem 5 testů pro 100% EP.
 
 **Shrnutí pro poznámky:**
 
@@ -50,14 +47,14 @@ Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a
 
 - **Princip:** Zaměřuje se na testování **hranic** mezi třídami ekvivalence a hodnot těsně kolem nich, protože zde se často vyskytují chyby. Vyžaduje nejprve EP.
 - **Varianty:**
-  - **2-hodnotová:** Testuje **hranici** a hodnotu **těsně vedle** (v sousední třídě).
-  - **3-hodnotová:** Testuje hodnotu **těsně před**, **na hranici** a **těsně vedle**.
+- **2-hodnotová:** Testuje **hranici** a hodnotu **těsně vedle** (v sousední třídě).
+- **3-hodnotová:** Testuje hodnotu **těsně před**, **na hranici** a **těsně vedle**.
 - **Proces:** Identifikuj třídy (EP) -> Identifikuj hranice -> Aplikuj 2/3-hodnotovou BVA -> Navrhni testy.
 - **Pokrytí:** 100% BVA = otestovány všechny hranice dle zvolené varianty.
 - **Příklad (Počet kusů 1-100):**
-  - Hranice: 1, 100.
-  - 2-hodnotová BVA: Testuj 0, 1, 100, 101.
-  - 3-hodnotová BVA: Testuj 0, 1, 2, 99, 100, 101.
+- Hranice: 1, 100.
+- 2-hodnotová BVA: Testuj 0, 1, 100, 101.
+- 3-hodnotová BVA: Testuj 0, 1, 2, 99, 100, 101.
 - **Kombinace:** Často se kombinuje s EP.
 
 **Shrnutí pro poznámky:**
@@ -74,9 +71,9 @@ Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a
 - **Proces:** Identifikuj podmínky a akce -> Vytvoř kombinace podmínek (pravidla, 2^N) -> Urči akce pro každé pravidlo -> (Minimalizuj tabulku pomocí "-") -> Navrhni 1 test/pravidlo.
 - **Pokrytí:** 100% = otestováno každé **pravidlo (sloupec)**.
 - **Příklad (Sleva v e-shopu):**
-  - Podmínky: Nový zákazník? (T/F), Objednávka > 1000? (T/F)
-  - Akce: Sleva 10%, Sleva 15%, Žádná sleva.
-  - Minimalizovaná tabulka měla 3 pravidla (sloupce), vyžaduje 3 testy.
+- Podmínky: Nový zákazník? (T/F), Objednávka > 1000? (T/F)
+- Akce: Sleva 10%, Sleva 15%, Žádná sleva.
+- Minimalizovaná tabulka měla 3 pravidla (sloupce), vyžaduje 3 testy.
 - **Výhody:** Systematické, odhaluje chybějící/nekonzistentní pravidla.
 - **Nevýhody:** Počet pravidel může být velký.
 
@@ -91,8 +88,8 @@ Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a
 
 - **Princip:** Technika pro modelování a testování systémů s **konečným počtem stavů**, kde chování závisí na **aktuálním stavu** a vstupních **událostech**.
 - **Modely:**
-  - **Diagram přechodů stavů:** Graficky (stavy, šipky=přechody, popisky=události/akce/[podmínky]).
-  - **Stavová tabulka:** Tabulka (řádky=stavy, sloupce=události, buňky=cílový stav/akce). Prázdná buňka = neplatný přechod.
+- **Diagram přechodů stavů:** Graficky (stavy, šipky=přechody, popisky=události/akce/[podmínky]).
+- **Stavová tabulka:** Tabulka (řádky=stavy, sloupce=události, buňky=cílový stav/akce). Prázdná buňka = neplatný přechod.
 - **Cíl:** Ověřit správnost přechodů mezi stavy, provedené akce, reakce na události.
 - **Kritéria pokrytí:** **Pokrytí všech stavů** (slabé), **Pokrytí všech platných přechodů** (běžné), testování **neplatných přechodů**.
 - **Testovací případ:** Typicky pokrývá sekvenci několika přechodů.
@@ -203,8 +200,8 @@ Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a
 
 - **AC:** **Měřitelné podmínky** pro dokončení scénáře. Vznikají ve spolupráci. Jsou to byznys testovací podmínky.
 - **Formáty:**
-  - **Scenario-oriented (GWT):** Given (kontext) / When (akce) / Then (výsledek).
-  - **Rule-oriented (Checklist):** Seznam konkrétních pravidel/kritérií.
+- **Scenario-oriented (GWT):** Given (kontext) / When (akce) / Then (výsledek).
+- **Rule-oriented (Checklist):** Seznam konkrétních pravidel/kritérií.
 
 #### 4.5.3 Vývoj řízený akceptačními testy (Acceptance Test-Driven Development - ATDD)
 
@@ -219,29 +216,3 @@ Rozhodně! Tady je ucelený souhrn všeho, co jsme dosud probrali z Kapitoly 4 a
 - **ATDD:** AC jako (automatizované) testy řídí vývoj kódu.
 
 ---
-
-## Kapitola 5: Management testování (Začátek)
-
-### 5.1 Plánování testování
-
-#### 5.1.1 Účel a obsah plánu testování
-
-- **Účel:** Hlavní dokument pro **strategii, přístup, zdroje, harmonogram**, komunikaci a sledování testování.
-- **Obsah:** Co (ne)testovat, Jak (přístup, techniky), Kdy (harmonogram), Kdo (role), Prostředí, Rizika, Kritéria (Pass/Fail, Suspend/Resume), Výstupy.
-- **Dynamický:** Aktualizuje se při změnách.
-
-#### 5.1.2 Přínos testerů při plánování iterací a vydání (Agile)
-
-- **Release Planning:** Definice testovatelných AC pro epicy/features, analýza rizik, odhady, strategie.
-- **Iteration/Sprint Planning:** Rozpad scénářů na úkoly, testovatelnost, upřesnění AC, rizika, odhady, závislosti.
-
-**Shrnutí pro poznámky (Úvod do Mgmt a Plánování):**
-
-- **Management testování:** Řízení test. procesu (Plánování, Rizika, Monitoring/Řízení, Konfigurace, Defekty).
-- **Plán testování:** Klíčový dokument (Co, Jak, Kdy, Kdo, Prostředí, Rizika...). Aktualizovat!
-- **Testeři v Agile plánování:** Klíčová role při definici AC, rizik, odhadů, strategie na obou úrovních (Release/Iteration).
-
----
-```
-
-Snad je to takto dostatečně ucelené a přehledné pro tvé potřeby! Prošli jsme toho opravdu hodně.
