@@ -59,8 +59,6 @@ Tyto metriky pomáhají zhodnotit, jak efektivní je náš testovací proces.
   - **Průměrný čas na nalezení/opravu defektu:** "Jak dlouho nám průměrně trvá, než najdeme příčinu kapajícího kohoutku a jak dlouho trvá instalatérovi ho opravit?"
   - **Náklady na nalezení defektu:** "Kolik nás stálo (čas lidí, nástroje) najít jedno netěsnící okno?"
 
-## Důležité "polopatě" pravidlo:
-
 - **Nesbírej metriky jen pro to, abys je měl.** Každá metrika by ti měla pomoci něco pochopit nebo o něčem rozhodnout. Pokud nevíš, k čemu ti metrika je, je zbytečná.
 - **Kontext je král.** Metrika sama o sobě nemusí nic znamenat. "10 nalezených chyb" – je to hodně nebo málo? Záleží na velikosti a složitosti systému, fázi testování atd. Metriky je potřeba interpretovat v kontextu.
 - **Trendy jsou často důležitější než absolutní čísla.** "Počet otevřených chyb roste každý týden" je varovnější signál než jen informace "Máme 50 otevřených chyb".
@@ -68,3 +66,41 @@ Tyto metriky pomáhají zhodnotit, jak efektivní je náš testovací proces.
 Doufám, že toto "polopaté" vysvětlení s příklady bylo srozumitelnější a pomohlo ti lépe si utřídit různé typy metrik a jejich účel.
 
 Je to teď jasnější? Chceš se k některé kategorii ještě vrátit nebo se na něco doptat?
+
+## Mnemotechnické pomůcky
+
+Určitě! Mnemotechnické pomůcky mohou být skvělé pro zapamatování kategorií nebo klíčových aspektů. Zkusme něco vymyslet pro ty hlavní kategorie metrik:
+
+### Mnemotechnická pomůcka pro kategorie metrik
+
+Představ si, že jsi **P**ilot **P**rojektu **K**valitního **P**roduktu a jsi **E**fektivní.
+
+- **P** – **P**ostup **P**rojektu/Iterace (Jak nám jde projekt celkově?)
+- **P** – **P**ostup **T**estování (Jak nám jde samotné testování? – zde "T" místo druhého "P" pro odlišení)
+- **K** – **K**valita **P**roduktu (Jak dobrý je náš produkt?)
+- **P** – **P**okrytí (Co všechno jsme otestovali?)
+- **E** – **E**fektivita **T**estování (Jak dobře a rychle pracujeme jako testeři?)
+
+Takže si zapamatuj větu nebo představu: **"Pilot Projektu Testuje Kvalitní Produkt Pokrytím Efektivně."** a první písmena ti napoví kategorie.
+
+### Další možné asociace pro jednotlivé kategorie
+
+- **Postup Projektu/Iterace:** Mysli na **manažerský přehled** – harmonogram, rozpočet, zdroje. Je to jako pohled z vrtulníku na celý projekt.
+- **Postup Testování:** Představ si **práci testera v terénu** – kolik testů napsal, kolik provedl, kolik selhalo. Je to pohled přímo na "dílnu" testování.
+- **Kvalita Produktu:** Mysli na **uživatele a jeho spokojenost** – jak často mu software padá, kolik má chyb, je spolehlivý? To je to, co uživatel vnímá.
+- **Pokrytí:** Představ si **mapu** a ty na ní vybarvuješ oblasti, které jsi už prozkoumal (otestoval). Chceš mít co nejvíce vybarveno.
+- **Efektivita Testování:** Mysli na **optimalizaci a rychlost** – jak rychle nacházíme chyby? Nestojí nás to příliš mnoho? Je to o tom, jak chytře pracujeme.
+
+### Mnemotechnika pro DDP (Defect Detection Percentage)
+
+**DDP** – **D**obře **D**etekované **P**roblémy (v dané fázi)
+Snažíš se zjistit, jak jsi byl _DOBRÝ_ v _DETEKOVÁNÍ PROBLÉMŮ_ (defektů) v té fázi, kde jsi zrovna byl, ve srovnání se všemi problémy, co tam celkem byly.
+
+### Mnemotechnika pro Defect Density
+
+**Defect Density** – **D**efekty na **D**anou **P**lochu (kódu/funkce)
+Je to jako hustota zalidnění – kolik defektů se "tlačí" na určitém kusu kódu nebo funkčnosti.
+
+Samozřejmě, nejlepší mnemotechnické pomůcky jsou často ty, které si člověk vytvoří sám, protože jsou spojené s jeho vlastními asociacemi. Ale snad ti tyhle dají nějakou inspiraci nebo základ.
+
+Co myslíš, pomohly by ti takovéto pomůcky? Nebo máš nápad na nějakou vlastní, která by ti seděla lépe?

@@ -12,7 +12,7 @@ Vítejte v sekci věnované managementu testování!
 
 ---
 
-### Co je Management testování?
+### 5.0 Co je Management testování?
 
 **Management testování** zahrnuje všechny aktivity spojené s řízením a kontrolou testovacího procesu během celého životního cyklu projektu. Nejde jen o samotné testování, ale o komplexní proces zahrnující:
 
@@ -24,19 +24,19 @@ Vítejte v sekci věnované managementu testování!
 
 Cílem je zajistit, aby testování bylo **efektivní**, **účinné** a přispívalo k celkovým cílům projektu (dodání kvalitního softwaru včas a v rámci rozpočtu).
 
-**Hlavní oblasti managementu testování (probereme v Kapitole 5):**
+**Hlavní oblasti managementu testování:**
 
-1.  **Plánování testování** (Kap. 5.1)
-2.  **Management rizik** (Kap. 5.2)
-3.  **Monitoring, řízení a dokončení testování** (Kap. 5.3)
-4.  **Konfigurační management** (Kap. 5.4)
-5.  **Management defektů** (Kap. 5.5)
+1. **Plánování testování** (Kap. 5.1)
+2. **Management rizik** (Kap. 5.2)
+3. **Monitoring, řízení a dokončení testování** (Kap. 5.3)
+4. **Konfigurační management** (Kap. 5.4)
+5. **Management defektů** (Kap. 5.5)
 
 Začneme plánováním.
 
 ---
 
-## Kapitola 5.1: Plánování testování
+## 5.1 Plánování testování
 
 ### 5.1.1 Účel a obsah plánu testování
 
@@ -98,12 +98,12 @@ V agilních přístupech mají testeři klíčovou roli v různých úrovních p
 
 - **Management testování:** Řízení a kontrola test. procesu (Plánování, Rizika, Monitoring/Řízení, Konfigurace, Defekty).
 - **Plán testování:**
-- **Účel:** Hlavní dokument (strategie, přístup, zdroje, harmonogram, komunikace).
-- **Obsah:** Co (ne)testovat, Jak (přístup), Kdy (harmonogram), Kdo (role), Prostředí, Rizika, Kritéria, Výstupy.
-- **Dynamický:** Aktualizovat dle potřeby.
+  - **Účel:** Hlavní dokument (strategie, přístup, zdroje, harmonogram, komunikace).
+  - **Obsah:** Co (ne)testovat, Jak (přístup), Kdy (harmonogram), Kdo (role), Prostředí, Rizika, Kritéria, Výstupy.
+  - **Dynamický:** Aktualizovat dle potřeby.
 - **Role testerů v Agilním plánování:**
-- **Release Planning:** AC pro epicy, rizika, odhady, strategie.
-- **Iteration/Sprint Planning:** Rozpad scénářů, testovatelnost, AC, rizika, odhady, závislosti.
+  - **Release Planning:** AC pro epicy, rizika, odhady, strategie.
+  - **Iteration/Sprint Planning:** Rozpad scénářů, testovatelnost, AC, rizika, odhady, závislosti.
 
 ---
 
@@ -116,11 +116,11 @@ Při plánování testování (a řízení jakékoli jiné aktivity) je důleži
 - **Co to je:** Definují **předpoklady**, které **musí být splněny, ABY mohla daná testovací aktivita** (např. úroveň testování jako systémové testování, nebo provedení specifické sady testů) **ZAČÍT**.
 - **Účel:** Zajistit, že máme vše potřebné připraveno a že začátek testování má smysl a je efektivní. Pokud vstupní kritéria nejsou splněna, začátek testování by byl pravděpodobně obtížný, nákladný, neefektivní nebo dokonce nemožný.
 - **Příklady vstupních kritérií:**
-- **Dostupnost zdrojů:** Jsou k dispozici testeři, nástroje, finance?
-- **Připravenost testovacího prostředí:** Je prostředí nainstalováno, nakonfigurováno, stabilní? Jsou dostupná testovací data?
-- **Připravenost testovací báze:** Jsou požadavky schválené a dostatečně kvalitní? Jsou uživatelské scénáře jasné?
-- **Připravenost testwaru:** Jsou testovací případy navržené a zrevidované? Jsou připraveny testovací skripty?
-- **Připravenost testovaného objektu:** Je kód dodaný (build), nainstalovaný v testovacím prostředí? Prošel základními "smoke testy" (ověření, že se systém vůbec spustí a základní funkce fungují)?
+  - **Dostupnost zdrojů:** Jsou k dispozici testeři, nástroje, finance?
+  - **Připravenost testovacího prostředí:** Je prostředí nainstalováno, nakonfigurováno, stabilní? Jsou dostupná testovací data?
+  - **Připravenost testovací báze:** Jsou požadavky schválené a dostatečně kvalitní? Jsou uživatelské scénáře jasné?
+  - **Připravenost testwaru:** Jsou testovací případy navržené a zrevidované? Jsou připraveny testovací skripty?
+  - **Připravenost testovaného objektu:** Je kód dodaný (build), nainstalovaný v testovacím prostředí? Prošel základními "smoke testy" (ověření, že se systém vůbec spustí a základní funkce fungují)?
 
 **Výstupní kritéria (Exit Criteria):**
 
@@ -128,11 +128,11 @@ Při plánování testování (a řízení jakékoli jiné aktivity) je důleži
 - **Účel:** Objektivně určit, kdy jsme dosáhli stanovených cílů testování a můžeme danou fázi ukončit (např. předat výsledky, začít další fázi). Pomáhají rozhodnout, zda je testovaný software připraven pro další krok (např. nasazení, další úroveň testování).
 - **Často spojována s "Definition of Done" (DoD):** V agilním prostředí jsou výstupní kritéria často klíčovou součástí Definition of Done pro uživatelský scénář, sprint nebo release.
 - **Příklady výstupních kritérií:**
-- **Pokrytí:** Bylo dosaženo požadované úrovně pokrytí (např. 100% pokrytí požadavků testy, 95% pokrytí větví pro kritické moduly)?
-- **Výsledky testů:** Byly provedeny všechny plánované testy? Jaký je poměr úspěšných a neúspěšných testů?
-- **Defekty:** Kolik je otevřených defektů? Jaká je jejich závažnost a priorita? Byl dosažen plánovaný počet nebo hustota defektů (defects density)? Jsou všechny kritické defekty opraveny a ověřeny?
-- **Důvěra:** Je dosaženo dostatečné úrovně důvěry v kvalitu produktu (může být subjektivní, ale často založeno na ostatních kritériích)?
-- **Termíny a rozpočet:** Byly dodrženy plánované termíny a rozpočet (i když samotné vyčerpání rozpočtu/času nemusí být nutně platným důvodem pro ukončení, pokud nejsou splněna kritéria kvality, viz níže)?
+  - **Pokrytí:** Bylo dosaženo požadované úrovně pokrytí (např. 100% pokrytí požadavků testy, 95% pokrytí větví pro kritické moduly)?
+  - **Výsledky testů:** Byly provedeny všechny plánované testy? Jaký je poměr úspěšných a neúspěšných testů?
+  - **Defekty:** Kolik je otevřených defektů? Jaká je jejich závažnost a priorita? Byl dosažen plánovaný počet nebo hustota defektů (defects density)? Jsou všechny kritické defekty opraveny a ověřeny?
+  - **Důvěra:** Je dosaženo dostatečné úrovně důvěry v kvalitu produktu (může být subjektivní, ale často založeno na ostatních kritériích)?
+  - **Termíny a rozpočet:** Byly dodrženy plánované termíny a rozpočet (i když samotné vyčerpání rozpočtu/času nemusí být nutně platným důvodem pro ukončení, pokud nejsou splněna kritéria kvality, viz níže)?
 
 **Důležité aspekty:**
 
@@ -147,22 +147,18 @@ Při plánování testování (a řízení jakékoli jiné aktivity) je důleži
 **Shrnutí pro poznámky (Plánování - Pokračování):**
 
 - **Vstupní kritéria (Entry Criteria):**
-- **Co:** Předpoklady pro **zahájení** testovací aktivity.
-- **Účel:** Zajistit připravenost, efektivitu.
-- **Příklady:** Zdroje, prostředí, test. báze, testware, test. objekt (vč. smoke testů).
+  - **Co:** Předpoklady pro **zahájení** testovací aktivity.
+  - **Účel:** Zajistit připravenost, efektivitu.
+  - **Příklady:** Zdroje, prostředí, test. báze, testware, test. objekt (vč. smoke testů).
 - **Výstupní kritéria (Exit Criteria):**
-- **Co:** Podmínky pro **dokončení** testovací aktivity.
-- **Účel:** Objektivně určit dokončení, připravenost pro další krok. Často součást **DoD**.
-- **Příklady:** Pokrytí, výsledky testů, stav defektů, důvěra, (harmonogram/rozpočet).
+  - **Co:** Podmínky pro **dokončení** testovací aktivity.
+  - **Účel:** Objektivně určit dokončení, připravenost pro další krok. Často součást **DoD**.
+  - **Příklady:** Pokrytí, výsledky testů, stav defektů, důvěra, (harmonogram/rozpočet).
 - **Společné:** Definice v **plánu**, **měřitelnost**, **kontext**, nesplnění výstupních kritérií = **dokumentovat riziko**.
 
-Paráda! Odhady jsou častým úkolem (a někdy i strašákem) v projektovém řízení, včetně testování.
-
-**Lekce 15: Kapitola 5.1.4 - Techniky pro odhadování pracnosti testování**
+### 5.1.4 Techniky pro odhadování pracnosti testování
 
 **Cíl:** Po této lekci bys měl/a být schopen/a použít techniky odhadování pro výpočet pracnosti potřebné při testování (K3).
-
-**Vysvětlení:**
 
 **Co je odhad pracnosti testování?**
 
@@ -180,16 +176,21 @@ Odhady ovlivňuje mnoho faktorů, například:
 - **Procesní faktory:** Zvolený SDLC model, vyspělost testovacího procesu, dostupné nástroje, tlak na termíny.
 - **Lidské faktory:** Zkušenosti a dovednosti týmu (nejen testerů, ale i vývojářů, analytiků...), komunikace v týmu.
 
-**Techniky odhadování (Sylabus zmiňuje čtyři):**
+**Techniky odhadování:**
 
-1.  **Odhad na základě metrik (Metrics-based approach):**
+1. **Odhad na základě metrik (Metrics-based approach):**
 
-- **Princip:** Využívá historická data a "standardizované" metriky z předchozích, podobných projektů v dané organizaci.
-- **Příklad:** Víme, že v minulých projektech byla pracnost testování typicky 40 % pracnosti vývoje. Pokud je odhad vývoje pro nový projekt 500 člověkodnů, odhadneme pracnost testování na 0.4 _ 500 = 200 člověkodnů. Nebo víme, že návrh a provedení testů pro jeden "středně složitý" funkční požadavek trvá průměrně 4 hodiny. Pokud máme 50 takových požadavků, odhad je 50 _ 4 = 200 člověkohodin.
-- **Výhody:** Pokud jsou historická data relevantní a kvalitní, může být poměrně přesný.
-- **Nevýhody:** Vyžaduje existenci a spolehlivost historických dat z _podobných_ projektů.
+   - **Princip:** Využívá historická data a "standardizované" metriky z předchozích, podobných projektů v dané organizaci.
+   - **Příklad:** Víme, že v minulých projektech byla pracnost testování typicky 40 % pracnosti vývoje. Pokud je odhad vývoje pro nový projekt 500 člověkodnů, odhadneme pracnost testování na 0.4 _ 500 = 200 člověkodnů. Nebo víme, že návrh a provedení testů pro jeden "středně složitý" funkční požadavek trvá průměrně 4 hodiny. Pokud máme 50 takových požadavků, odhad je 50 _ 4 = 200 člověkohodin.
+   - **Výhody:** Pokud jsou historická data relevantní a kvalitní, může být poměrně přesný.
+   - **Nevýhody:** Vyžaduje existenci a spolehlivost historických dat z _podobných_ projektů.
 
-2.  **Odhad na základě expertízy (Expert-based approach):**
+2. **Odhad na základě expertízy (Expert-based approach):**
+
+   - **Princip:** Využívá znalosti a zkušenosti expertů (např. zkušených testerů, manažerů testů, vývojářů, byznys analytiků) na danou oblast nebo technologii. Experti odhadnou pracnost na základě svého úsudku.
+   - **Techniky využívající expertní odhad:**
+
+3. **Odhad na základě expertízy (Expert-based approach):**
 
 - **Princip:** Využívá znalosti a zkušenosti expertů (např. zkušených testerů, manažerů testů, vývojářů, byznys analytiků) na danou oblast nebo technologii. Experti odhadnou pracnost na základě svého úsudku.
 - **Techniky využívající expertní odhad:**
@@ -536,4 +537,86 @@ Výběr metrik závisí na cílech testování, potřebách projektu a dostupnos
   - **Summary Report (Souhrnný):** Po dokončení fáze, celkové vyhodnocení, metriky, ponaučení, doporučení. Pro management, zákazníka.
 - **Komunikace stavu:** Formální reporty, Dashboardy, Schůzky, Neformální. **Přizpůsobit cílové skupině.**
 
-Uf, to bylo hodně informací o řízení! Jsi připraven/a na otázky k tomuto bloku?
+Skvěle! Jsem rád, že pomůcky mohly být užitečné.
+
+Uzavřeli jsme tedy sekci 5.3 (Monitoring, řízení a dokončení testování). Další logickou součástí managementu testování je **Kapitola 5.4 - Konfigurační management**.
+
+**Lekce 19: Kapitola 5.4 - Konfigurační management (Configuration Management)**
+
+**Cíl:** Po této lekci bys měl/a být schopen/a shrnout, jak konfigurační management přispívá k testování (K2).
+
+**Vysvětlení:**
+
+**Co je Konfigurační management (KM)?**
+
+Představ si, že stavíš složitou stavebnici LEGO, která má tisíce dílků a několik verzí návodu. Aby sis byl jistý, že stavíš správný model podle správného návodu a že když nějaký dílek vyměníš, budeš vědět, který to byl a proč, potřebuješ nějaký systém. A přesně o tom je konfigurační management v softwarovém světě, včetně testování.
+
+Konfigurační management je disciplína, která se zabývá **identifikací, organizací, řízením změn a sledováním verzí** všech důležitých součástí systému a souvisejících pracovních produktů během jeho životního cyklu.
+
+**Proč je KM důležitý pro testování?**
+
+Testování pracuje s mnoha různými "díly skládačky", které se mohou měnit. Aby bylo testování spolehlivé, opakovatelné a výsledky důvěryhodné, potřebujeme mít tyto díly pod kontrolou.
+
+**Jak konfigurační management přispívá k testování:**
+
+1.  **Jednoznačná identifikace testovaného objektu:**
+
+    - KM zajišťuje, že víme **přesně, kterou verzi** softwaru (nebo jeho komponenty) testujeme. Pokud najdeme chybu, musíme být schopni ji přiřadit ke konkrétní verzi, aby ji vývojáři mohli opravit.
+    - _Analogie:_ Musíme vědět, jestli testujeme "LEGO auto verze 1.0 s červenými koly" nebo "verzi 1.1 s modrými koly a přidaným spoilerem".
+
+2.  **Verzování a správa testwaru:**
+
+    - Testware (testovací plány, testovací případy, testovací skripty, testovací data, testovací prostředí) také prochází vývojem a změnami. KM pomáhá **sledovat verze** těchto artefaktů.
+    - Musíme být schopni spárovat správnou verzi testů se správnou verzí testovaného softwaru. Testy pro verzi 1.0 nemusí být platné pro verzi 2.0.
+    - _Analogie:_ Potřebujeme správnou verzi návodu (testovací plán/případy) pro správnou verzi LEGO stavebnice (testovaný software).
+
+3.  **Řízení změn (Change Management):**
+
+    - Když se změní požadavky, kód nebo testware, KM pomáhá sledovat tyto změny, jejich dopad a zajistit, že jsou správně schváleny a implementovány.
+    - Pokud se změní požadavek, musíme vědět, které testy je potřeba upravit nebo přidat.
+    - _Analogie:_ Pokud se rozhodneme, že naše LEGO auto bude mít místo spoileru střešní okno, musíme aktualizovat návod i seznam dílků (testy).
+
+4.  **Reprodukovatelnost testů:**
+
+    - Abychom mohli ověřit opravu chyby (konfirmační testování) nebo zjistit, zda oprava nezpůsobila nové problémy (regresní testování), musíme být schopni **zopakovat test za stejných podmínek**.
+    - KM pomáhá zajistit, že máme k dispozici stejnou verzi softwaru, stejnou verzi testů, stejná testovací data a stejnou konfiguraci prostředí.
+    - _Analogie:_ Pokud se nám LEGO auto rozpadlo, musíme být schopni ho postavit znovu přesně podle stejného návodu se stejnými dílky, abychom zjistili, kde byla chyba.
+
+5.  **Sledovatelnost (Traceability):**
+
+    - KM podporuje sledovatelnost mezi požadavky, testy, defekty a verzemi kódu. Víme, který test ověřuje který požadavek, ve které verzi kódu byla nalezena chyba a kterým testem byla ověřena její oprava.
+    - _Analogie:_ Víme, který krok v návodu odpovídá které části LEGO modelu a který dílek tam patří.
+
+6.  **Správa testovacího prostředí:**
+    - Konfigurace testovacího prostředí (operační systém, databáze, verze knihoven, nastavení sítě...) musí být také pod kontrolou. KM pomáhá definovat, sestavit a udržovat konzistentní testovací prostředí.
+    - _Analogie:_ Musíme mít správné nářadí a pracovní stůl (prostředí) pro stavbu naší LEGO stavebnice.
+
+**Konfigurační položky (Configuration Items - CI):**
+
+Všechny tyto "díly skládačky", které jsou pod správou KM, se nazývají **konfigurační položky**. Může to být:
+
+- Kód (moduly, komponenty, celý systém)
+- Dokumentace (požadavky, návrhy, uživatelské manuály)
+- Testware (plány, případy, skripty, data)
+- Nástroje (a jejich verze)
+- Hardware (a jeho konfigurace)
+- Testovací prostředí (celá jeho konfigurace)
+
+**Baseline:**
+Když je sada konfiguračních položek (např. určitá verze kódu a k ní patřící testy) schválena a formálně zafixována v čase, nazývá se to **baseline**. Jakékoli další změny v baseline by měly procházet formálním procesem řízení změn.
+
+**Integrace s CI/CD:**
+V moderním vývoji (DevOps, CI/CD) je konfigurační management často automatizován a je klíčovou součástí pipeline pro sestavení, testování a nasazení.
+
+**Shrnutí pro poznámky (Konfigurační management - KM):**
+
+- **Co to je:** Disciplína pro **identifikaci, organizaci, řízení změn a sledování verzí** všech důležitých součástí systému a testwaru.
+- **Proč je důležitý pro testování:**
+  - **Jednoznačná identifikace** testovaného objektu (víme, co testujeme).
+  - **Verzování a správa testwaru** (správné testy pro správnou verzi).
+  - **Řízení změn** (sledování dopadů změn na testy).
+  - **Reprodukovatelnost testů** (možnost zopakovat test za stejných podmínek).
+  - Podpora **sledovatelnosti** (vztahy mezi požadavky, testy, defekty, kódem).
+  - **Správa testovacího prostředí** (konzistentní prostředí).
+- **Konfigurační položky (CI):** Vše, co je pod správou KM (kód, dokumenty, testware, nástroje, prostředí...).
+- **Baseline:** Formálně schválená a zafixovaná sada CI v čase.
