@@ -1,4 +1,5 @@
 **Lekce 1: Kapitola 1 - Základy testování (Úvod) a Kapitola 1.1 - Co je to testování?**
+
 **Cíl:** Po této lekci byste měli být schopni:
 
 1.  Identifikovat typické cíle testování (K1).
@@ -6,11 +7,11 @@
 
 **Vysvětlení:**
 
-**1 Úvod do Základů testování**
+### 1 Úvod do Základů testování
 
 Tato kapitola položí základy pro všechno, co následuje. Řekneme si, co to testování vlastně je, proč je důležité, jaké má principy, jaké jsou základní činnosti a role.
 
-**1.1 Co je to testování?**
+### 1.1 Co je to testování?
 
 Možná to zní jako jednoduchá otázka, ale definice testování je širší, než si mnoho lidí myslí.
 
@@ -28,7 +29,7 @@ Možná to zní jako jednoduchá otázka, ale definice testování je širší, 
 - **Dynamické testování:** Testování **spuštěním kódu**. Zahrnuje provedení testovacích případů a sledování chování systému. Tomu jsme se věnovali v Kapitole 4 (techniky).
 - **Intelektuální činnost:** Testování vyžaduje analytické myšlení, kritické myšlení, kreativitu, znalosti domény a technické dovednosti.
 
-**1.1.1 Typické cíle testování**
+#### 1.1.1 Typické cíle testování
 
 Proč vlastně testujeme? Cíle se mohou lišit v závislosti na kontextu projektu, úrovni testování a dalších faktorech, ale typické cíle zahrnují:
 
@@ -42,7 +43,7 @@ Proč vlastně testujeme? Cíle se mohou lišit v závislosti na kontextu projek
 8.  **Vytvoření důvěry v danou úroveň kvality testovaného objektu:** Ukázat, že systém funguje podle očekávání a je spolehlivý.
 9.  **Kontrola, zda je testovaný objekt kompletní a funguje dle očekávání všech zainteresovaných stran (Validation).**
 
-**1.1.2 Testování a ladění (Debugging)**
+#### 1.1.2 Testování a ladění (Debugging)
 
 Toto je velmi důležité rozlišení, které se často plete!
 
@@ -81,7 +82,7 @@ Výborně, pojďme na to.
 
 **Vysvětlení:**
 
-**1.2.1 Ilustrace nezbytnosti testování**
+### 1.2.1 Ilustrace nezbytnosti testování
 
 Už jsme si naznačili, že software je všude kolem nás a jeho selhání může mít různé následky. Testování je nezbytné, protože:
 
@@ -103,7 +104,7 @@ Už jsme si naznačili, že software je všude kolem nás a jeho selhání můž
 
 Tyto příklady ukazují, že investice do kvalitního testování se často mnohonásobně vrátí prevencí mnohem větších škod.
 
-**1.2.2 Testování a zajištění kvality (Quality Assurance - QA)**
+### 1.2.2 Testování a zajištění kvality (Quality Assurance - QA)\*\*
 
 Je důležité rozlišovat mezi testováním a zajištěním kvality (QA), i když jsou úzce spjaty.
 
@@ -115,7 +116,7 @@ Je důležité rozlišovat mezi testováním a zajištěním kvality (QA), i kdy
 
 **Vztah:** Testování je jednou z klíčových aktivit v rámci Řízení kvality (QC), a QC i QA společně přispívají k celkové kvalitě. QA nastavuje rámec a procesy, QC (včetně testování) kontroluje, zda je produkt v souladu s požadavky.
 
-**1.2.3 Chyba, defekt, selhání a kořenová příčina**
+### 1.2.3 Chyba, defekt, selhání a kořenová příčina
 
 Tyto termíny se často zaměňují, ale mají specifické významy:
 
@@ -148,33 +149,3 @@ Tyto termíny se často zaměňují, ale mají specifické významy:
   - **Selhání (Failure):** Projev defektu při spuštění (systém se nechová, jak má).
   - **Kořenová příčina (Root Cause):** Původní důvod vzniku chyby.
   - Řetězec: Kořenová příčina -> Chyba -> Defekt -> (může způsobit) Selhání.
-
-Je ti jasné, proč bez testování riskujeme problémy, jaký je rozdíl mezi testováním a QA, a jak spolu souvisí chyba, defekt a selhání?
-
-**Kontrolní otázky (Lekce 22):**
-
-1.  Programátor kvůli únavě nesprávně implementoval algoritmus pro výpočet slevy, což vedlo k tomu, že v kódu je chybná podmínka. Když si zákazník objednal konkrétní kombinaci zboží, sleva mu nebyla započítána, ačkoli měla být. Co v tomto scénáři představuje "selhání"?
-    a) Únava programátora.
-    b) Chybná podmínka v kódu.
-    c) Nesprávně implementovaný algoritmus.
-    d) Nezapočítání slevy zákazníkovi.
-
-2.  Která z následujících aktivit je typicky součástí Zajištění kvality (QA), ale NENÍ přímou součástí Testování?
-    a) Provádění regresních testů po opravě chyby.
-    b) Definování a implementace standardů pro proces vývoje softwaru.
-    c) Vytváření reportu o nalezeném defektu.
-    d) Návrh testovacích případů na základě specifikace.
-
-3.  Analytik požadavků špatně interpretoval potřebu zákazníka a do specifikace zapsal nesprávný požadavek na funkčnost. Vývojář podle této specifikace implementoval kód. Co je v tomto případě "defektem"?
-    a) Špatná interpretace analytika.
-    b) Nesprávný požadavek v dokumentu specifikace.
-    c) Implementace kódu vývojářem.
-    d) Nespokojenost zákazníka při použití funkce.
-
-4.  Proč je důležité identifikovat a analyzovat kořenové příčiny defektů?
-    a) Pouze proto, aby bylo možné určit, kdo udělal chybu.
-    b) Aby bylo možné opravit konkrétní selhání v produkčním prostředí.
-    c) Aby bylo možné zlepšit procesy a předejít opakování podobných chyb v budoucnu.
-    d) Aby se zvýšil počet nalezených defektů v projektu.
-
-Dej vědět, jak to dopadlo!
